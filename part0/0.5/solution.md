@@ -29,13 +29,4 @@ sequenceDiagram
     server-->>browser: JSON with notes
     deactivate server
 
-    Note right of browser: Browser renders notes dynamically
-
-    Note right of browser: User enters note and submits
-
-    browser->>server: POST /new_note_spa (AJAX request with JSON)
-    activate server
-    server-->>browser: HTTP 201 Created (no redirect)
-    deactivate server
-
-    Note right of browser: Browser updates notes list dynamically without page reload
+    Note right of browser: Browser renders notes dynamically on the page
